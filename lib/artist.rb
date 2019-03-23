@@ -11,19 +11,19 @@ class Artist
     @songs = []
   end
 
-  def self.find_by_name(name) #
+  def self.find_by_name(name) # to extend
     @@artists.detect{|a| a.name == name}
   end
 
-  def self.all #
+  def self.all # to extend
     @@artists
   end
 
-  def self.reset_all #
+  def self.reset_all # to extend
     self.all.clear
   end
 
-  def self.count #
+  def self.count # to extend
     self.all.count
   end
 
@@ -36,7 +36,7 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
-  def to_param #
+  def to_param # to include
     name.downcase.gsub(' ', '-')
   end
 end
