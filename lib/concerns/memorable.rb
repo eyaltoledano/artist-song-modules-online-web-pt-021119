@@ -1,5 +1,5 @@
 module Memorable
-  class ClassVariables
+  module ClassVariables
     def self.reset_all # to extend
       self.all.clear
     end
