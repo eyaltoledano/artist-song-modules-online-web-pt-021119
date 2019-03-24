@@ -1,9 +1,15 @@
 module Memorable
-  def reset_all # to extend
-    self.all.clear
-  end
+  module ClassMethods
+    def reset_all # to extend
+      self.all.clear
+    end
 
-  def count # to extend
-    self.all.count
+    def count # to extend
+      self.all.count
+    end
+  end
+  module InstanceMethods
+    def initialize
+    end
   end
 end
