@@ -14,7 +14,7 @@ class Artist
     @songs = []
   end
 
-  def self.all # to extend
+  def self.all
     @@artists
   end
 
