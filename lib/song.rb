@@ -13,7 +13,7 @@ class Song
     @@songs << self
   end
 
-  def self.all # to extend
+  def self.all
     @@songs
   end
 
